@@ -5,183 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авион</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="assets/icons/search.png" alt="Иконка поиск">
-             <img src="logo.png" alt="Логотип сайта">
-            <img src="assets/icons/shopping_cart.png" alt="Иконка корзина">
-            <img src="assets/icons/user_avatar.png" alt="Иконка аватара">
+    <header class="header">
+        <div class="header__top">
+            <img src="assets/icons/search.png" alt="Иконка поиск" class="header__icon header__icon_search">
+            <a href="#"><img src="logo.png" alt="Логотип сайта" class="header__logo"></a>
+            <img src="assets/icons/shopping_cart.png" alt="Иконка корзина" class="header__icon header__icon_cart">
+            <img src="assets/icons/user_avatar.png" alt="Иконка аватара" class="header__icon header__icon_user">
         </div>
 
-        <div>
-
+        <div class="header__bottom">
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#features" class="nav__link">Что делает нас уникальным</a></li>
+                    <li class="nav__item"><a href="#products" class="nav__link">Новинки керамики</a></li>
+                    <li class="nav__item"><a href="#popular" class="nav__link">Популярные товары</a></li>
+                    <li class="nav__item"><a href="#newsletter" class="nav__link">Подписка</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link nav__link_active">О компании</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <nav>
-            <ul>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-                <li><a href="#">Навигационная ссылка</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Авион, мебельный бренд будущего - с дизайном, который не стареет</h1>
-            <button>Посмотреть коллекцию</button>
-            <p>Новая эра экологичной мебели с&nbsp;Авион&nbsp;&mdash; французским брендом роскоши. Элегантные шрифты, продуманная цветовая палитра и&nbsp;изысканный цифровой формат, созданный с&nbsp;помощью современных технологий</p>
-            <img src="assets/img/chair_big.png" alt="Черный стул на зеленом фоне">
-        </section>
-
-        <section>
-            <h2>Что делает наш бренд уникальным</h2>
-            <div>
-                <img src="assets/icons/delivery.png" alt="Иконка доставка">
-                <h3>Доставка на следующий день - стандарт</h3>
-                <p>Закажите до&nbsp;15:00&nbsp;&mdash; и&nbsp;получите заказ уже на&nbsp;следующий день. Всегда</p>
+        <!-- Главный баннер -->
+        <section class="hero" id="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Авион, мебельный бренд будущего - с дизайном, который не стареет</h1>
+                <button class="hero__btn btn">Посмотреть коллекцию</button>
+                <p class="hero__desc">Новая эра экологичной мебели с&nbsp;Авион&nbsp;&mdash; французским брендом роскоши. Элегантные шрифты, продуманная цветовая палитра и&nbsp;изысканный цифровой формат, созданный с&nbsp;помощью современных технологий</p>
             </div>
-            <div>
-                <img src="assets/icons/checkmark_outline.png" alt="Иконка галочка">
-                <h3>Изготовлено настоящими мастерами</h3>
-                <p>Ручная работа, созданная с&nbsp;истинной страстью и&nbsp;мастерством. Каждая деталь&nbsp;&mdash; от&nbsp;сердца</p>
-            </div>
-            <div>
-                <img src="assets/icons/purchase.png" alt="Иконка банковской карты">
-                <h3>Цены, которые не побьешь</h3>
-                <p>За&nbsp;такое качество и&nbsp;материалы вы&nbsp;не&nbsp;найдете лучших цен нигде. Гарантируем</p>
-            </div>
-            <div>
-                <img src="assets/icons/sprout.png" alt="Иконка растение">
-                <h3>Экологичная упаковка</h3>
-                <p>Мы&nbsp;используем 100% переработанную упаковку&nbsp;&mdash; чтобы ваш след на&nbsp;планете был минимальным</p>
+            <div class="hero__image">
+                <img src="assets/img/chair_big.png" alt="Черный стул на зеленом фоне">
             </div>
         </section>
 
-        <section>
-            <h2>Новинки керамики</h2>
-            <article>
-                <img src="assets/img/chair_small.png" alt="Фото кресла Дэнди">
-                <h3>Кресло «Дэнди»</h3>
-                <p>180000&nbsp;рублей</p>
-            </article>
-            <article>
-                <img src="assets/img/set_of_vases.png" alt="Фото набора ваз Рустик">
-                <h3>Набор ваз «Рустик» (в деревенском стиле)</h3>
-                <p>125000&nbsp;рублей</p>
-            </article>
-            <article>
-                <img src="assets/img/vase.png" alt="Фото вазы Силки">
-                <h3>Ваза «Силки»</h3>
-                <p>33000&nbsp;рублей</p>
-            </article>
-            <article>
-                <img src="assets/img/lamp.png" alt="Фото лампы Люси">
-                <h3>Лампа «Люси»</h3>
-                <p>45000&nbsp;рублей</p>
-            </article>
-            <button>Посмотреть всю коллекцию</button>
+        <!-- Что делает нас уникальными -->
+        <section class="features" id="features">
+            <h2 class="features__title">Что делает наш бренд уникальным</h2>
+            <div class="features__grid">
+                <div class="feature-card">
+                    <img src="assets/icons/delivery.png" alt="Иконка доставка" class="feature-card__icon">
+                    <h3 class="feature-card__title">Доставка на следующий день - стандарт</h3>
+                    <p class="feature-card__desc">Закажите до&nbsp;15:00&nbsp;&mdash; и&nbsp;получите заказ уже на&nbsp;следующий день. Всегда</p>
+                </div>
+                <div class="feature-card">
+                    <img src="assets/icons/checkmark_outline.png" alt="Иконка галочка" class="feature-card__icon">
+                    <h3 class="feature-card__title">Изготовлено настоящими мастерами</h3>
+                    <p class="feature-card__desc">Ручная работа, созданная с&nbsp;истинной страстью и&nbsp;мастерством. Каждая деталь&nbsp;&mdash; от&nbsp;сердца</p>
+                </div>
+                <div class="feature-card">
+                    <img src="assets/icons/purchase.png" alt="Иконка банковской карты" class="feature-card__icon">
+                    <h3 class="feature-card__title">Цены, которые не побьешь</h3>
+                    <p class="feature-card__desc">За&nbsp;такое качество и&nbsp;материалы вы&nbsp;не&nbsp;найдете лучших цен нигде. Гарантируем</p>
+                </div>
+                <div class="feature-card">
+                    <img src="assets/icons/sprout.png" alt="Иконка растение" class="feature-card__icon">
+                    <h3 class="feature-card__title">Экологичная упаковка</h3>
+                    <p class="feature-card__desc">Мы&nbsp;используем 100% переработанную упаковку&nbsp;&mdash; чтобы ваш след на&nbsp;планете был минимальным</p>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Наши популярные товары</h2>
-            <article>
-                <img src="assets/img/green_sofa.png" alt="Фото дивана Поплар из замши">
-                <h3>Диван «Поплар» из замши</h3>
-                <p>460000&nbsp;рублей</p>
-            </article>
-            <article>
-                <img src="assets/img/chair_small.png" alt="Фото кресла Дэнди">
-                <h3>Кресло «Дэнди»</h3>
-                <p>180000&nbsp;рублей</p>
-            </article>
-            <article>
-                <img src="assets/img/gray_chair.png" alt="Фото кресла Дэнди Классик">
-                <h3>Кресло «Дэнди Классик»</h3>
-                <p>460000&nbsp;рублей</p>
-            </article>
-            <button>Перейти в каталог</button>
+        <!-- Новинки керамики -->
+        <section class="products" id="products">
+            <h2 class="products__title">Новинки керамики</h2>
+            <div class="products__grid">
+                <article class="product-card">
+                    <div class="product-card__img-wrapper">
+                        <img src="assets/img/chair_small.png" alt="Фото кресла Дэнди" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Кресло «Дэнди»</h3>
+                    <p class="product-card__price">180000&nbsp;рублей</p>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__img-wrapper">
+                        <img src="assets/img/set_of_vases.png" alt="Фото набора ваз Рустик" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Набор ваз «Рустик» (в деревенском стиле)</h3>
+                    <p class="product-card__price">125000&nbsp;рублей</p>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__img-wrapper">
+                        <img src="assets/img/vase.png" alt="Фото вазы Силки" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Ваза «Силки»</h3>
+                    <p class="product-card__price">33000&nbsp;рублей</p>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__img-wrapper">
+                        <img src="assets/img/lamp.png" alt="Фото лампы Люси" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Лампа «Люси»</h3>
+                    <p class="product-card__price">45000&nbsp;рублей</p>
+                </article>
+            </div>
+            <button class="products__btn btn">Посмотреть всю коллекцию</button>
         </section>
 
-        <section>
-            <h2>Присоединяйтесь к клубу - получайте бонусы</h2>
-            <p>Подпишитесь на&nbsp;рассылку&nbsp;&mdash; получайте эксклюзивные предложения на&nbsp;новинки, распродажи и&nbsp;многое другое</p>
-            <input type="email" value="your@email.com">
-            <button>Подписаться</button>
+        <!-- Популярные товары -->
+        <section class="popular" id="popular">
+            <h2 class="popular__title">Наши популярные товары</h2>
+            <div class="popular__grid">
+                <article class="product-card">
+                    <div class="product-card__img-wrapper">
+                        <img src="assets/img/green_sofa.png" alt="Фото дивана Поплар из замши" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Диван «Поплар» из замши</h3>
+                    <p class="product-card__price">460000&nbsp;рублей</p>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__img-wrapper">
+                        <img src="assets/img/chair_small.png" alt="Фото кресла Дэнди" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Кресло «Дэнди»</h3>
+                    <p class="product-card__price">180000&nbsp;рублей</p>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__img-wrapper">
+                        <img src="assets/img/gray_chair.png" alt="Фото кресла Дэнди Классик" class="product-card__img">
+                    </div>
+                    <h3 class="product-card__title">Кресло «Дэнди Классик»</h3>
+                    <p class="product-card__price">460000&nbsp;рублей</p>
+                </article>
+            </div>
+            <button class="popular__btn btn">Перейти в каталог</button>
         </section>
 
-        <section>
-            <h2>От студии в Лондоне до глобального бренда с более чем 400 магазинами</h2>
-            <p>Когда мы&nbsp;основали Avion, наша идея была проста: создавать качественную мебель по&nbsp;доступным ценам, чтобы она была доступна для массового рынка</p>
-            <p>Мы&nbsp;живем, дышим и&nbsp;проектируем ручную, тщательно изготовленную мебель и&nbsp;домашнюю утварь, поэтому наш бутик в&nbsp;Москве стал центром лондонского сообщества дизайнеров интерьеров</p>
-            <button>Связаться с нами</button>
-            <img src="assets/img/interior.png" alt="Фото интерьера с мебелью от Авион">
+        <!-- Подписка на рассылку -->
+        <section class="newsletter" id="newsletter">
+            <div class="newsletter__content">
+                <h2 class="newsletter__title">Присоединяйтесь к клубу - получайте бонусы</h2>
+                <p class="newsletter__desc">Подпишитесь на&nbsp;рассылку&nbsp;&mdash; получайте эксклюзивные предложения на&nbsp;новинки, распродажи и&nbsp;многое другое</p>
+                <form class="newsletter__form">
+                    <input type="email" class="newsletter__input" placeholder="your@email.com">
+                    <button type="submit" class="newsletter__btn btn btn--primary" disabled>Подписаться</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- О компании -->
+        <section class="about" id="about">
+            <div class="about__content">
+                <h2 class="about__title">От студии в Москве до глобального бренда с более чем 400 магазинами</h2>
+                <p class="about__text">Когда мы&nbsp;основали Avion, наша идея была проста: создавать качественную мебель по&nbsp;доступным ценам, чтобы она была доступна для массового рынка</p>
+                <p class="about__text">Мы&nbsp;живем, дышим и&nbsp;проектируем ручную, тщательно изготовленную мебель и&nbsp;домашнюю утварь, поэтому наш бутик в&nbsp;Москве стал центром лондонского сообщества дизайнеров интерьеров</p>
+                <button class="about__btn btn" disabled>Связаться с нами</button>
+            </div>
+
+            <div class="about__image">
+                <img src="assets/img/interior.png" alt="Фото интерьера с мебелью от Авион">
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <section>
-                <h3>Меню</h3>
-                <nav>
-                    <ul style="list-style: none">
-                        <li><a href="#">Новинки</a></li>
-                        <li><a href="#">Хиты продаж</a></li>
-                        <li><a href="#">Недавно просмотренные</a></li>
-                        <li><a href="#">Популярные на этой неделе</a></li>
-                        <li><a href="#">Все товары</a></li>
+    <footer class="footer">
+        <div class="footer__top">
+            <section class="footer-section">
+                <h3 class="footer-section__title">Меню</h3>
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a href="#hero" class="footer-nav__link">Главная</a></li>
+                        <li class="footer-nav__item"><a href="#about" class="footer-nav__link">О бренде</a></li>
+                        <li class="footer-nav__item"><a href="#features" class="footer-nav__link">Что делает нас особенными</a></li>
+                        <li class="footer-nav__item"><a href="#products" class="footer-nav__link">Новинки</a></li>
+                        <li class="footer-nav__item"><a href="#popular" class="footer-nav__link">Популярное</a></li>
+                        <li class="footer-nav__item"><a href="#newsletter" class="footer-nav__link">Рассылка</a></li>
                     </ul>
                 </nav>
             </section>
 
-            <section>
-                <h3>Категории</h3>
-                <nav>
-                    <ul style="list-style: none">
-                        <li><a href="#">Посуда</a></li>
-                        <li><a href="#">Мебель</a></li>
-                        <li><a href="#">Домашняя утварь</a></li>
-                        <li><a href="#">Горшки для растений</a></li>
-                        <li><a href="#">Стулья</a></li>
-                        <li><a href="#">Посуда</a></li>
+            <section class="footer-section">
+                <h3 class="footer-section__title">Категории</h3>
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a href="#popular" class="footer-nav__link">Посуда</a></li>
+                        <li class="footer-nav__item"><a href="#popular" class="footer-nav__link">Мебель</a></li>
+                        <li class="footer-nav__item"><a href="#popular" class="footer-nav__link">Домашняя утварь</a></li>
+                        <li class="footer-nav__item"><a href="#popular" class="footer-nav__link">Горшки для растений</a></li>
+                        <li class="footer-nav__item"><a href="#popular" class="footer-nav__link">Стулья</a></li>
+                        <li class="footer-nav__item"><a href="#popular" class="footer-nav__link">Столовые приборы</a></li>
                     </ul>
                 </nav>
             </section>
 
-            <section>
-                <h3>О компании</h3>
-                <nav>
-                    <ul style="list-style: none">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Вакансии</a></li>
-                        <li><a href="#">Свяжитесь с нами</a></li>
-                        <li><a href="#">Конфиденциальность</a></li>
-                        <li><a href="#">Политика возврата</a></li>
+            <section class="footer-section">
+                <h3 class="footer-section__title">О компании</h3>
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a href="#about" class="footer-nav__link">О нас</a></li>
+                        <li class="footer-nav__item"><a href="#about" class="footer-nav__link">Вакансии</a></li>
+                        <li class="footer-nav__item"><a href="#about" class="footer-nav__link">Свяжитесь с нами</a></li>
+                        <li class="footer-nav__item"><a href="#about" class="footer-nav__link">Конфиденциальность</a></li>
+                        <li class="footer-nav__item"><a href="#about" class="footer-nav__link">Политика возврата</a></li>
                     </ul>
                 </nav>
             </section>
 
-            <section>
-                <h3>Подпишитесь на нашу рассылку</h3>
-                <input type="email" value="your@email.com">
-                <button>Подписаться</button>
+            <section class="footer-section">
+                <h3 class="footer-section__title">Подпишитесь на нашу рассылку</h3>
+                <form class="footer-form">
+                    <input type="email" class="footer-form__input" placeholder="your@email.com">
+                    <button type="submit" class="footer-form__btn btn btn--primary" disabled>Подписаться</button>
+                </form>
             </section>
         </div>
 
-        <div>
-            <small>&copy; Авторские права ничем не&nbsp;защищены:)</small>
-            <a href="#"><img src="assets/icons/logo_linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="assets/icons/logo_facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="assets/icons/logo_instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="assets/icons/logo_skype.png" alt="Skype"></a>
-            <a href="#"><img src="assets/icons/logo_twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="assets/icons/logo_pinterest.png" alt="Pinterest"></a>
+        <div class="footer__bottom">
+            <small class="footer__copyright">&copy; Авторские права ничем не&nbsp;защищены:)</small>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link"><img src="assets/icons/logo_linkedin.png" alt="LinkedIn"></a>
+                <a href="#" class="footer__social-link"><img src="assets/icons/logo_facebook.png" alt="Facebook"></a>
+                <a href="#" class="footer__social-link"><img src="assets/icons/logo_instagram.png" alt="Instagram"></a>
+                <a href="#" class="footer__social-link"><img src="assets/icons/logo_skype.png" alt="Skype"></a>
+                <a href="#" class="footer__social-link"><img src="assets/icons/logo_twitter.png" alt="Twitter"></a>
+                <a href="#" class="footer__social-link"><img src="assets/icons/logo_pinterest.png" alt="Pinterest"></a>
+            </div>
         </div>
     </footer>
 </body>

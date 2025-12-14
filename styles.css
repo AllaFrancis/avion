@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap');
+
+/* Общие стили */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #5A5891; /* Primary */
+    background-color: #F9F9F9; /* Light Gray */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Шрифты */
+h1, h2, h3 {
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+p, li, a {
+    font-size: 0.9rem;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.btn:focus {
+  outline: 2px solid #8A88C6; /* Светлее Primary */
+  outline-offset: 2px;
+  background-color: #4A487C;
+}
+
+.btn:active {
+  transform: translateY(0);
+  background-color: #3A3866;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn:disabled,
+.btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  background-color: #5A5891;
+}
+
+.btn--primary {
+    background-color: #5A5891; /* Primary */
+    color: #FFFFFF; /* White */
+}
+
+.btn--primary:hover {
+    background-color: #4A487C; /* Темнее Primary */
+}
+
+/* Шапка */
+.header {
+    background-color: #FFFFFF; /* White */
+    border-bottom: 1px solid #EAEAEA; /* Border Gray */
+    padding: 1rem 2rem;
+}
+
+.header__top {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.header__logo {
+    opacity: 0.8;
+}
+
+.header__logo:hover {
+    opacity: 1;
+}
+
+.header__icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.header__icon:hover {
+    opacity: 1;
+}
+
+.header__nav {
+    text-align: center;
+}
+
+.nav__list {
+    list-style: none;
+}
+
+.nav__link {
+    color: #D8D8E0; /* Border Dark */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.nav__link:hover,
+.nav__link_active {
+    color: #5A5891; /* Primary */
+    border-bottom: 2px solid currentColor;
+}
+
+/* Главный баннер */
+.hero {
+    background-color: #2B2647; /* Dark primary */
+}
+
+.hero__content {
+    background-color: #2B2647; /* Dark primary */
+    color: #FFFFFF; /* White */
+    padding: 4rem 3rem;
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+.hero__btn {
+    background-color: #D8D8E0; /* Border Dark */
+    color: #2B2647; /* Dark primary */
+    margin-bottom: 1.5rem;
+}
+
+.hero__btn:hover {
+    background-color: #C8C8D0; /* Светлее Border Dark */
+}
+
+.hero__desc {
+    font-size: 0.9rem;
+    color: #FFFFFF; /* White */
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.hero__image {
+    align-items: center;
+}
+
+.hero__image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Что делает нас уникальным */
+.features {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.features__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #5A5891; /* Primary */
+}
+
+.feature-card {
+    padding: 2rem;
+    background-color: #FFFFFF; /* White */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card__icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.feature-card__title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #2B2647; /* Dark primary */
+}
+
+.feature-card__desc {
+    font-size: 0.9rem;
+    color: #5A5891; /* Primary */
+}
+
+/* Новинки керамики */
+.products {
+    padding: 4rem 2rem;
+    background-color: #F9F9F9; /* Light Gray */
+    text-align: center;
+}
+
+.products__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #5A5891; /* Primary */
+    text-align: center;
+}
+
+.product-card {
+    background-color: #FFFFFF; /* White */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover{
+    transform: translateY(-5px);
+}
+
+.product-card__img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.product-card__img {
+    width: auto;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.product-card__title {
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #2B2647; /* Dark primary */
+}
+
+.product-card__price {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #5A5891; /* Primary */
+    font-weight: 600;
+}
+
+.products__btn {
+    display: block;
+    margin: 2rem auto 0;
+    background-color: #5A5891; /* Primary */
+    color: #FFFFFF; /* White */
+}
+
+.products__btn:hover {
+    background-color: #4A487C; /* Темнее Primary */
+}
+
+/* Популярные товары */
+.popular {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.popular__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #5A5891; /* Primary */
+}
+
+.popular__btn {
+    display: block;
+    margin: 2rem auto 0;
+    background-color: #5A5891; /* Primary */
+    color: #FFFFFF; /* White */
+}
+
+.popular__btn:hover {
+    background-color: #4A487C; /* Темнее Primary */
+}
+
+/* Подписка на рассылку */
+.newsletter {
+    padding: 4rem 4rem;
+    background-color: #F9F9F9; /* Light Gray */
+    text-align: center;
+}
+
+.newsletter__content {
+    background-color: #FFFFFF; /* White */
+    padding: 4rem 3rem;
+}
+
+.newsletter__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #5A5891; /* Primary */
+}
+
+.newsletter__desc {
+    font-size: 1rem;
+    color: #5A5891; /* Primary */
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.newsletter__input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #EAEAEA; /* Border Gray */
+    border-radius: 4px;
+    font-size: 0.9rem;
+    width: 250px;
+    background-color: #FFFFFF; /* White */
+    color: #2B2647; /* Dark primary */
+}
+
+.newsletter__btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background-color: #2B2647; /* Dark primary */
+    color: #FFFFFF; /* White */
+}
+
+/* О компании */
+.about {
+    background-color: #F9F9F9; /* Light Gray */
+    align-items: center;
+}
+
+.about__content {
+    padding: 4rem 3rem;
+    background-color: #FFFFFF; /* White */
+}
+
+.about__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #5A5891; /* Primary */
+}
+
+.about__text {
+    margin-bottom: 1rem;
+    color: #5A5891; /* Primary */
+}
+
+.about__btn {
+    background-color: #5A5891; /* Primary */
+    color: #FFFFFF; /* White */
+    margin-top: 1rem;
+}
+
+.about__btn:hover {
+    background-color: #4A487C; /* Темнее Primary */
+}
+
+.about__image {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background-color: #FFFFFF; /* White */
+}
+
+.about__image img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Футер */
+.footer {
+    background-color: #2B2647; /* Dark primary */
+    color: #FFFFFF; /* White */
+    padding: 3rem 2rem;
+    font-size: 0.9rem;
+}
+
+.footer-section__title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF; /* White */
+}
+
+.footer-nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav__item {
+    margin-bottom: 0.5rem;
+}
+
+.footer-nav__link {
+    color: #D8D8E0; /* Border Dark */
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-nav__link:hover {
+    color: #FFFFFF; /* White */
+}
+
+.footer-form__input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+    min-width: 200px;
+}
+
+.footer-form__btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    background-color: #FFFFFF; /* White */
+    color: #2B2647; /* Dark primary */
+}
+
+.footer-form__btn:hover {
+    background-color: #EAEAEA; /* Border Gray */
+}
+
+.footer__copyright {
+    color: #D8D8E0; /* Border Dark */
+}
+
+.footer__social-link img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.footer__social-link img:hover {
+    opacity: 1;
+}
